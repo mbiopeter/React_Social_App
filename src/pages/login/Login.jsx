@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Login.scss";
 
 const Login = () => {
@@ -8,7 +9,9 @@ const Login = () => {
             <h1>Vibe Verse</h1>
             <p>Our platform is dedicated to fostering a vibrant community where individuals from all walks of life come together to share their passions, experiences, and aspirations. </p>
             <span>Do'nt have an account?</span>
-            <button>Register</button>
+            <Link to='/Register'>
+              <button>Register</button>
+            </Link>
           </div>
           <div className="right">
             <h1>Login</h1>
