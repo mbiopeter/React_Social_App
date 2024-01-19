@@ -1,11 +1,40 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Login from '../src/pages/login/Login.jsx';
+import Home from '../src/pages/home/Home.jsx';
+import Profile from '../src/pages/profile/Profile.jsx';
 import Register from '../src/pages/register/Register.jsx';
+import NavBar from "./components/navBar/NavBar.jsx";
+import LeftBar from "./components/leftBar/LeftBar.jsx";
+import RightBar from "./components/rightBar/RightBar.jsx";
 function App() {
+  const Layout = () => {
+    return (
+      <div>
+        <NavBar />
+        <div style={{ display: 'flex' }}>
+          <LeftBar />
+          <Outlet />
+          <RightBar />
+        </div>
+
+      </div>
+    )
+  }
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Login />,
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/Profile/:id",
+          element: <Profile />,
+        },
+      ]
     },
     {
       path: "/Login",
