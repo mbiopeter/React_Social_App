@@ -17,21 +17,22 @@
             flex: 1;
             background:linear-gradient(rgba(39,11,96,0.5), rgba(92, 8, 128, 0.7)),  url('https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=600') center;
             background-size: cover;
-            padding: 50px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
             color: #fff;
 
             h1{
-                font-size: 100px;
-                line-height: 100px;
+                font-size: 50px;
+                line-height: 70px;
             }
             p{
+                font-size: 14px;
 
             }
             span{
-                font-size: 14px;
+                font-size: 12px;
             }
             button{
                 width: 50%;
