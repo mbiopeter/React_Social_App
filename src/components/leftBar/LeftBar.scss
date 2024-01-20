@@ -3,7 +3,11 @@
     position: sticky;
     top: 50px;
     height: calc(100vh - 50px);
+    overflow: scroll;
 
+    &::-webkit-scrollbar{
+        display: none;
+    }
     .container{
         padding: 10px 20px;
 
