@@ -6,6 +6,7 @@ import Register from '../src/pages/register/Register.jsx';
 import NavBar from "./components/navBar/NavBar.jsx";
 import LeftBar from "./components/leftBar/LeftBar.jsx";
 import RightBar from "./components/rightBar/RightBar.jsx";
+import "./style.scss";
 function App() {
 
   const currentUser = true;
@@ -13,7 +14,7 @@ function App() {
 
   const Layout = () => {
     return (
-      <div>
+      <div className="theme-dark">
         <NavBar />
         <div style={{ display: 'flex' }}>
           <LeftBar />
