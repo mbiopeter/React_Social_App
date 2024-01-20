@@ -3,19 +3,20 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    height: 50px;
+    height: 30px;
     border-bottom: 1px solid lightgrey;
     position: sticky;
     top: 0;
+    background-color: #fff;
 
     .left{
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
 
         span{
             font-weight: bold;
-            font-size: 20px;
+            font-size: 16px;
             color: darkblue;
 
         }
@@ -26,7 +27,7 @@
             gap: 10px;
             border: 1px solid lightgrey;
             border-radius: 5px;
-            padding: 5px;
+            padding: 3px;
 
             input{
                 border: none;
@@ -40,7 +41,7 @@
     .right{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
 
         .user{
         display: flex;
