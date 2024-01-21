@@ -5,6 +5,9 @@
     @include themify($themes){
         background-color: themed("bgSoft");
         color:themed("textColor");
-        padding: 20px 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 30px;
     }
 }
