@@ -10,6 +10,13 @@
         overflow: scroll;
         background-color: themed("bgSoft");
         color:themed("textColor") ;
+        @include mobile {
+            display: none;
+        }
+        
+        @include tablet {
+            display: none;
+        }
 
         &::-webkit-scrollbar{
             display: none;

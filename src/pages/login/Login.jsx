@@ -28,6 +28,9 @@ const Login = () => {
               <input type="text" placeholder="Username" />
               <input type="password" placeholder="Password" />
               <button onClick={handleLogin}>Login</button>
+              <Link to='/Register' style={{textDecoration:'none'}}>
+                <span>Don't have an Account? Register</span>
+              </Link>
             </form>
           </div>
         </div>

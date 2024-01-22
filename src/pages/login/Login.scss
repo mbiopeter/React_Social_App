@@ -1,3 +1,4 @@
+@import "../../style.scss";
 .login{
     height: 100vh;
     background-color: rgb(193, 190,255);
@@ -12,7 +13,10 @@
         border-radius: 10px;
         min-height: 70%;
         overflow: hidden;
-
+        @include mobile {
+            width: 90%;
+            min-height: 60%;
+        }
         .left{
             flex: 1;
             background:linear-gradient(rgba(39,11,96,0.5), rgba(92, 8, 128, 0.7)),  url('https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=600') center;
@@ -22,6 +26,11 @@
             flex-direction: column;
             gap: 20px;
             color: #fff;
+
+            @include mobile {
+                display: none;
+                width: 100%;
+            }
 
             h1{
                 font-size: 50px;
@@ -79,6 +88,18 @@
                     cursor: pointer;
                     font-weight: bold;
                 }
+                span{
+                    display: none;
+                    @include mobile {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                        color: #444;
+                        padding-top: 10px;
+
+                    }
+                }                
             }
         }
     }

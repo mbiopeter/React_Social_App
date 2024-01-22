@@ -21,6 +21,9 @@ const Register = () => {
               <input type="password" placeholder="Password" />
               <input type="text" placeholder="Name" />            
               <button>Register</button>
+              <Link to='/Login' style={{textDecoration:'none'}}>
+                <span>Have an Account? Login</span>
+              </Link>
             </form>
           </div>
         </div>

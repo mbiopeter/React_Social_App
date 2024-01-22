@@ -1,17 +1,39 @@
+@import "../../style.scss";
 .stories{
     display: flex;
     gap: 10px;
     height: 150px;
     margin-bottom: 30px;
     overflow: auto;
-
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    @include mobile {
+        height: 30px;
+        gap: 10px;
+        width: 95vw;
+    }
+    @include tablet {
+        height: 100px;
+    }
 
     .story{
         border-radius: 10px;
         overflow: hidden;
         position: relative;
         max-width: 100px;
-        
+     @include mobile {
+        flex: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }       
+     @include tablet {
+        flex: none;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }       
 
         img{
             width: 100%;
@@ -26,6 +48,12 @@
             color: #fff;
             font-weight: 500;
             font-size: 12px;
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                display: none;
+            }
         }
         button{
             position: absolute;
@@ -43,6 +71,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @include mobile {
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            @include tablet {
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
         }
     }
 }
